@@ -25,9 +25,9 @@ function CountryList() {
       try {
         const result = await axios.get(URL);
         setCountries(result.data);
-        setLoading(false);
       } catch (error) {
         console.error(error);
+      } finally {
         setLoading(false);
       }
     };

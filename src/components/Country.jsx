@@ -16,9 +16,9 @@ const Country = () => {
       try {
         const response = await axios.get(URL);
         setCountry(response.data);
-        setLoading(false);
       } catch (error) {
         console.error(error);
+      } finally {
         setLoading(false);
       }
     };

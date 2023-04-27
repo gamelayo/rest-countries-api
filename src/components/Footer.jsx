@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center bg-primary py-4">
+    <footer className="flex flex-col items-center bg-primary py-4">
       <div className="flex flex-col md:flex-row md:gap-8 mb-4">
         <div class="flex gap-2 mx-auto">
           <p>Challenge by</p>
@@ -37,7 +37,7 @@ const Footer = () => {
         </a>
       </div>
       <p> </p>
-    </div>
+    </footer>
   );
 };
 
